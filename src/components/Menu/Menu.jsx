@@ -3,9 +3,9 @@ import styles from './menu.module.css';
 
 const Menu = ({ children }) => {
     return (
-        <div className={styles.Navbar}>
+        <header className={styles.Navbar}>
             { children }    
-        </div>
+        </header>
     )
 }
 

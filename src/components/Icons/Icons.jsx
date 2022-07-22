@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from '../Menu/menu.module.css';
-import mail from './mail.svg';
-import discord from './discord.svg';
-import twitter from './twitter.svg';
-import instagram from './instagram.svg';
+import mail from '../../assets/mail.svg';
+import discord from '../../assets/discord.svg';
+import twitter from '../../assets/twitter.svg';
+import instagram from '../../assets/instagram.svg';
 
 const Icons = () => {
     return (
