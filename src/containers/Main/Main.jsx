@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components";
 import Image from '../../assets/background-main.jpg'
 
-const Content = ({children}) => {
+const Main = ({children}) => {
     return (
         <Container>
             {children}
@@ -10,7 +10,7 @@ const Content = ({children}) => {
     )
 }
 
-const Container = styled.div`
+const Container = styled.main`
 
     height: 685px;
     background: url(${Image}) black;
@@ -24,4 +24,4 @@ const Container = styled.div`
     
 `;
 
-export { Content };
+export { Main };

@@ -5,17 +5,17 @@ const lineHeight = { 'lineHeight': '25px' }
 
 const Description = () => {
     return (
-        <Main>
+        <Div>
             <span>LAUNCHING SOON</span>
             <h1 className='title'>DES ARTS</h1>
             <span className='subtitle'>METAPOLITAN SOCIETY</span>
             <span style={lineHeight}>Building web 3.0 for the future,</span>
             <span>one unicorn at a time...</span>
-        </Main>
+        </Div>
     )
 }
 
-const Main = styled.main`
+const Div = styled.div`
 
     padding: 9em 0em 5em 14em;
     color: white;

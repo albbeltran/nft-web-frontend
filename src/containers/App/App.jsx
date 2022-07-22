@@ -1,8 +1,9 @@
 import './App.css';
+import { NavLink, Route, Routes } from "react-router-dom";
 import { Menu } from '../../components/Menu/Menu.jsx';
 import { Logo } from '../../components/Logo/Logo.jsx';
 import { Icons } from '../../components/Icons/Icons.jsx';
-import { Content } from '../Content/Content.jsx';
+import { Main as Main } from '../Main/Main.jsx';
 import { Description } from '../../components/Description/Description.jsx';
 import { Picture } from '../../components/Picture/Picture.jsx';
 
@@ -13,11 +14,23 @@ function App() {
         <Logo />
         <Icons />
       </Menu>
-      <Content>
-        <Description />
-        <Picture />
-      </Content>
-    </div>
+      <Main>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Description />
+              <Picture />
+            </>
+          } />
+          <Route path="/home" element={
+            <>
+              <Description />
+              <Picture />
+            </>
+          } />
+        </Routes>
+      </Main>
+    </div >
   );
 }
 
