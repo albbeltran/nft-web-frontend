@@ -11,7 +11,7 @@ const Description = () => {
                     <br></br>
                     The Metapolitan Society offers you the special opportunity to not only make new connections but also work towards building a prosperous future for the Metaverse in which art and entrepreneurialism are reinvented. As such, Des Arts brings a variety of backgrounds and unparalleled experiences to the art world, redefining conventional norms.
                 </p>
-                <a className='link' href='../../assets/Light_paper.pdf'>
+                <a className='link' href='../../assets/Light_paper.pdf' target='_blank' download>
                     <img src={vector} className='vector' alt='right-arrow'></img>
                     White Paper
                 </a>
@@ -60,6 +60,7 @@ const Div = styled.div`
     }
 
     .link {
+        font-weight: 450;
         display: inline-block;
         font-family: 'Fredoka', sans-serif; 
         font-size: 20px;
