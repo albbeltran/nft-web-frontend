@@ -14,7 +14,7 @@ function App() {
         <Logo />
         <Icons />
       </Menu>
-      <Main>
+      <Main >
         <Routes>
           <Route path="/" element={
             <>

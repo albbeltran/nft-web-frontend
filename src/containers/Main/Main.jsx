@@ -1,10 +1,18 @@
 import React from 'react';
 import styled from "styled-components";
-import Image from '../../assets/background-main.jpg'
+import ImageMain from '../../assets/background-main.jpg'
+import ImageStars from '../../assets/background-stars.jpg'
 
-const Main = ({children}) => {
+let background;
+
+window.location.pathname == '/' ?
+    background = { 'backgroundImage': `url(${ImageMain})` }
+    : background = { 'backgroundImage': `url(${ImageStars})` }
+
+const Main = ({ children }) => {
+
     return (
-        <Container>
+        <Container style={background}>
             {children}
         </Container>
     )
@@ -13,7 +21,6 @@ const Main = ({children}) => {
 const Container = styled.main`
 
     height: 685px;
-    background: url(${Image}) black;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
