@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import Image from '../../assets/unicorn-full.png'
 

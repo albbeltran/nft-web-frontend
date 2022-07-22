@@ -3,10 +3,10 @@ import { NavLink, Route, Routes } from "react-router-dom";
 import { Menu } from '../../components/Menu/Menu.jsx';
 import { Logo } from '../../components/Logo/Logo.jsx';
 import { Icons } from '../../components/Icons/Icons.jsx';
-import { Main } from '../Main/Main.jsx';
+import { Main } from '../../components/Main/Main.jsx';
 import { Description } from '../../components/Description/Description.jsx';
 import { Picture } from '../../components/Picture/Picture.jsx';
-import { Navegation } from '../../components/Navegation/Navegation.jsx';
+import { Navegation } from '../Navegation/Navegation.jsx';
 
 function App() {
   return (

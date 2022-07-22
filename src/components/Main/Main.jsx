@@ -20,7 +20,7 @@ const Main = ({ children }) => {
 
 const Container = styled.main`
 
-    height: 685px;
+    height: 696px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
