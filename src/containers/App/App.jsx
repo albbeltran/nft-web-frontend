@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 import { Menu } from '../../components/Menu/Menu.jsx';
 import { Logo } from '../../components/Logo/Logo.jsx';
 import { Icons } from '../../components/Icons/Icons.jsx';
