@@ -1,0 +1,22 @@
+.Navbar {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 9em;
+}
+
+.Logo {
+    width: 15%;
+}
+
+.Icons {
+
+}
+
+.Icon {
+    color: white;
+    margin: 0 15px;
+    width: 30px;
+}

@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import styles from './menu.module.css';
 
-const Menu = () => {
+const Menu = ({ children }) => {
     return (
-        <div>
-            <h1>Hola</h1>
+        <div className={styles.Navbar}>
+            { children }    
         </div>
     )
 }
