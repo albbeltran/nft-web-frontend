@@ -31,7 +31,9 @@ const Div = styled.div`
         font-weight: 700;
         font-size: 75px;
         margin: -10px 0 -15px 0;
-        text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.6);
+        text-shadow:
+            0 0 7px #ffffff,
+            0 0 250px #e252ff
     }
 
     .subtitle {

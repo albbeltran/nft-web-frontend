@@ -14,7 +14,7 @@ const About = ({ children }) => {
 
 const Modal = styled.div`
 
-    background: rgba(32, 35, 41, .8);
+    background: rgba(0, 0, 0, .5);
     position: fixed;
     top: -10px;
     left: -10px;

@@ -4,10 +4,11 @@ import ImageMain from '../../assets/background-main.jpg'
 import ImageStars from '../../assets/background-stars.jpg'
 
 let background;
+const path = window.location.pathname;
 
-window.location.pathname === '/' ?
-    background = { 'backgroundImage': `url(${ImageMain})` }
-    : background = { 'backgroundImage': `url(${ImageStars})` }
+if(path === '/') background = { 'backgroundImage': `url(${ImageMain})` }
+else if(path === '/home') background = { 'backgroundImage': `url(${ImageStars})` }
+else if(path === '/about') background = { 'backgroundImage': `url(${ImageMain})` }
 
 const Main = ({ children }) => {
 
