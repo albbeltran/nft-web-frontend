@@ -5,7 +5,7 @@ import ImageStars from '../../assets/background-stars.jpg'
 
 let background;
 
-window.location.pathname == '/' ?
+window.location.pathname === '/' ?
     background = { 'backgroundImage': `url(${ImageMain})` }
     : background = { 'backgroundImage': `url(${ImageStars})` }
 
