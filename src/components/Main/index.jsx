@@ -8,8 +8,7 @@ const path = window.location.pathname;
 
 if (path === '/') background = { 'backgroundImage': `url(${ImageMain})` }
 else if (path === '/home') background = { 'backgroundImage': `url(${ImageStars})` }
-else if (path === '/about') background = { 'backgroundImage': `url(${ImageMain})` }
-else if (path === '/roadmap') background = { 'backgroundImage': `url(${ImageMain})` }
+else background = { 'backgroundImage': `url(${ImageMain})` }
 
 const Main = ({ children }) => {
     return (

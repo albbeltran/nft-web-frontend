@@ -12,6 +12,9 @@ import { DescriptionAbout } from '../../components/DescriptionAbout';
 import { CloseBtn } from '../../components/CloseBtn/index.jsx';
 import { DescriptionRoadMap } from '../../components/DescriptionRoadMap';
 import { ProjectType } from '../ProjectType/index.jsx';
+import { FooterTxt } from '../../components/FooterText/index.jsx';
+import { DescriptionBehind } from '../../components/DescripionBehind';
+import { Carousel } from '../../components/Carousel';
 
 function App() {
 
@@ -37,18 +40,35 @@ function App() {
           } />
           <Route path="/about" element={
             <Modal >
-              <DescriptionAbout >
-                <CloseBtn />
-              </DescriptionAbout >
+              <div className='Roadmap--container'>
+                <DescriptionAbout >
+                  <CloseBtn />
+                </DescriptionAbout >
+                <FooterTxt />
+              </div>
             </Modal >
           } />
           <Route path="/roadmap" element={
             <Modal >
-              <div className='Roadmap'>
-                <DescriptionRoadMap >
+              <div className='Roadmap--container'>
+                <div className='Roadmap--content'>
+                  <DescriptionRoadMap >
+                    <CloseBtn />
+                  </DescriptionRoadMap>
+                  <ProjectType />
+                </div>
+                <FooterTxt />
+              </div>
+            </Modal >
+          } />
+          <Route path="/behind-design" element={
+            <Modal >
+              <div className='Roadmap--container'>
+                <DescriptionBehind >
                   <CloseBtn />
-                </DescriptionRoadMap>
-                <ProjectType />
+                </DescriptionBehind >
+                  <Carousel />
+                <FooterTxt />
               </div>
             </Modal >
           } />

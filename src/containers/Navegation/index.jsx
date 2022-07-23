@@ -35,7 +35,7 @@ const Navegation = () => {
             <NavLink className="link faq" to="/faq" onMouseEnter={changeDisplay} onMouseLeave={changeDisplay}>
                 FAQ
             </NavLink>
-            <NavLink className="link design" to="/design" onMouseEnter={changeDisplay} onMouseLeave={changeDisplay}>
+            <NavLink className="link design" to="/behind-design" onMouseEnter={changeDisplay} onMouseLeave={changeDisplay}>
                 Behind the design
             </NavLink>
             <NavLink className="link team" to="/team" onMouseEnter={changeDisplay} onMouseLeave={changeDisplay}>
