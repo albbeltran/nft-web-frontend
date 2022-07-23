@@ -14,11 +14,15 @@ const DescriptionRoadMap = ({ children }) => {
                     We want each of our holders to have direct access to what is needed to become
                     successful, in and out of the metaverse.
 
-                    <br></br>
+                    <br></br><br></br>
                     The current structures involve several intermediaries and procedures that have
                     proven to be difficult for the common Web 3.0 enthusiast.
                 </p>
             </div>
+            {/* <p className='footerTxt'>\\ ROADMAP
+                <br></br>
+                \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+            </p> */}
         </Content>
     )
 }

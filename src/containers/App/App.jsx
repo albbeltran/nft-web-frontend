@@ -11,7 +11,7 @@ import { Navegation } from '../Navegation/index.jsx';
 import { DescriptionAbout } from '../../components/DescriptionAbout';
 import { CloseBtn } from '../../components/CloseBtn/index.jsx';
 import { DescriptionRoadMap } from '../../components/DescriptionRoadMap';
-import { ArtRoadMap } from '../../components/ArtRoadMap/index.jsx';
+import { ArtRoadMap } from '../../components/ProjectType/index.jsx';
 
 function App() {
 
@@ -36,23 +36,21 @@ function App() {
             </>
           } />
           <Route path="/about" element={
-            <>
-              <Modal >
-                <DescriptionAbout >
-                  <CloseBtn />
-                </DescriptionAbout >
-              </Modal >
-            </>
+            <Modal >
+              <DescriptionAbout >
+                <CloseBtn />
+              </DescriptionAbout >
+            </Modal >
           } />
           <Route path="/roadmap" element={
-            <>
-              <Modal >
+            <Modal >
+              <div className='Roadmap'>
                 <DescriptionRoadMap >
                   <CloseBtn />
                 </DescriptionRoadMap>
                 <ArtRoadMap />
-              </Modal >
-            </>
+              </div>
+            </Modal >
           } />
         </Routes>
       </Main>

@@ -1,3 +1,5 @@
-body {
-    width: 100%;
+.Roadmap {
+    margin-top: 7.5em;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
 }

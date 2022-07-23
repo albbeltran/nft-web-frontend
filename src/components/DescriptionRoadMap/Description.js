@@ -5,6 +5,7 @@ const Content = styled.div`
     font-family: 'Fredoka', sans-serif; 
     width: 75%;
     text-align: left;
+    margin-left: 10em;
 
     .title {
         font-weight: 700;
