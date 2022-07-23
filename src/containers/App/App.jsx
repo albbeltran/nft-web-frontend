@@ -15,6 +15,8 @@ import { ProjectType } from '../ProjectType/index.jsx';
 import { FooterTxt } from '../../components/FooterText/index.jsx';
 import { DescriptionBehind } from '../../components/DescripionBehind';
 import { Carousel } from '../../components/Carousel';
+import { DescriptionJoinUs } from '../../components/DescriptionJoinUs';
+import { Button } from '../../components/Button';
 
 function App() {
 
@@ -67,9 +69,17 @@ function App() {
                 <DescriptionBehind >
                   <CloseBtn />
                 </DescriptionBehind >
-                  <Carousel />
+                <Carousel />
                 <FooterTxt />
               </div>
+            </Modal >
+          } />
+          <Route path="/join" element={
+            <Modal >
+              <DescriptionJoinUs >
+                <CloseBtn />
+                <Button text='Join our Discord' classBtn='join' />
+              </DescriptionJoinUs >
             </Modal >
           } />
         </Routes>

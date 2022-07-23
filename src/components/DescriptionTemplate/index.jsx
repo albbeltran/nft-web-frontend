@@ -2,7 +2,7 @@ import React from 'react';
 import { Content } from './Description';
 import vector from '../../assets/Vector-Right.svg'
 
-const Description = ({ children, title, description, link, footerTxt, section }) => {
+const Description = ({ children, title, description, link, section }) => {
   let widthMain, widthContainer;
 
   if (section === 'about') {
@@ -24,12 +24,6 @@ const Description = ({ children, title, description, link, footerTxt, section })
             White Paper
           </a>}
       </div>
-      {footerTxt &&
-        <p className='footerTxt'>\\ ABOUT US
-          <br></br>
-          \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-        </p>
-      }
     </Content >
   )
 }
