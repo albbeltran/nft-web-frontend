@@ -1,29 +1,29 @@
 {
     "data": {
-        "description": [
-            {
-                "descAbout": {
-                    "section": "about",
-                    "title": "About Us",
-                    "description": "<strong>Des Arts is a NFT collection of 8,888 NFTs built on the Ethereum Blockchain.</strong><br></br>The Metapolitan Society offers you the special opportunity to not only make new connections but also work towards building a prosperous future for the Metaverse in which art and entrepreneurialism are reinvented. As such, Des Arts brings a variety of backgrounds and unparalleled experiences to the art world, redefining conventional norms"
-                },
-                "descBehindDesign": {
-                    "section": "behind-design",
-                    "title": "Behind Design",
-                    "description": "Our collection presents influential individuals such as Aristotle, Einstein, Da Vinci, and Jeanne D’Arc amongst many other remarkable personalities. These extraordinary characters achieved the pinnacle of creativity through science, philosophy, and wisdom in their pursuit of elevating human consciousness. <br></br><br></br>We at Des Arts recognize these individuals as the embodiment of Art: we do not categorize art and we do not constrain the Artist."
-                },
-                "descJoinUs": {
-                    "section": "join",
-                    "title": "Join the Community",
-                    "description": "We welcome our holders to journey with us into a community filled with creativity, diversity, and belonging. <br></br><br></br>A Metapolitan club in which networking is propelled into a whole other dimension…Literally."
-                },
-                "descRoadMap": {
-                    "section": "roadmap",
-                    "title": "Roadmap",
-                    "description": "We are all aware of the struggles coming into the Web 3.0 ecosystem. Funding and Talent being at the core of these challenges. Des Arts is here to provide the infrastructure and resources to build Web 3.0 for the future. We want each of our holders to have direct access to what is needed to become successful, in and out of the metaverse. <br></br><br></br>The current structures involve several intermediaries and procedures that have proven to be difficult for the common Web 3.0 enthusiast."
-                }
-            }
-        ],
+        "sectionAbout": "About",
+        "sectionBehindDesign": "Behind Design",
+        "sectionJoinUs": "Join Us",
+        "sectionRoadmap": "Roadmap",
+        "descAbout": {
+            "section": "about",
+            "title": "About Us",
+            "description": "<strong>Des Arts is a NFT collection of 8,888 NFTs built on the Ethereum Blockchain.</strong><br></br>The Metapolitan Society offers you the special opportunity to not only make new connections but also work towards building a prosperous future for the Metaverse in which art and entrepreneurialism are reinvented. As such, Des Arts brings a variety of backgrounds and unparalleled experiences to the art world, redefining conventional norms"
+        },
+        "descBehindDesign": {
+            "section": "behind-design",
+            "title": "Behind Design",
+            "description": "Our collection presents influential individuals such as Aristotle, Einstein, Da Vinci, and Jeanne D’Arc amongst many other remarkable personalities. These extraordinary characters achieved the pinnacle of creativity through science, philosophy, and wisdom in their pursuit of elevating human consciousness. <br></br><br></br>We at Des Arts recognize these individuals as the embodiment of Art: we do not categorize art and we do not constrain the Artist."
+        },
+        "descJoinUs": {
+            "section": "join",
+            "title": "Join the Community",
+            "description": "We welcome our holders to journey with us into a community filled with creativity, diversity, and belonging. <br></br><br></br>A Metapolitan club in which networking is propelled into a whole other dimension…Literally."
+        },
+        "descRoadMap": {
+            "section": "roadmap",
+            "title": "Roadmap",
+            "description": "We are all aware of the struggles coming into the Web 3.0 ecosystem. Funding and Talent being at the core of these challenges. Des Arts is here to provide the infrastructure and resources to build Web 3.0 for the future. We want each of our holders to have direct access to what is needed to become successful, in and out of the metaverse. <br></br><br></br>The current structures involve several intermediaries and procedures that have proven to be difficult for the common Web 3.0 enthusiast."
+        },
         "behindDesingSet": [
             {
                 "card": [
@@ -43,6 +43,12 @@
                 "twitter": "#",
                 "linkedin": "#",
                 "instagram": "#"
+            }
+        ],
+        "FAQ": [
+            {
+                "title": "Question title",
+                "text": "Question text"
             }
         ]
     }

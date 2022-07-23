@@ -1,5 +1,7 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
 import { Route, Routes } from "react-router-dom";
+import { useData } from './useData';
 import { Modal } from '../../Modal/Modal.js';
 import { Menu } from '../../components/Menu/index.jsx';
 import { Logo } from '../../components/Logo/index.jsx';
@@ -24,6 +26,13 @@ import { Card } from '../../components/Card';
 import { Alert } from '../../components/Alert/index.jsx';
 
 function App() {
+  const {
+    sectionAbout,
+    sectionBehindDesign,
+    sectionRoadmap
+  } = useData();
+
+  console.log(sectionAbout)
 
   return (
     <div>
@@ -51,7 +60,7 @@ function App() {
                 <DescriptionAbout >
                   <CloseBtn />
                 </DescriptionAbout >
-                <FooterTxt />
+                <FooterTxt section={sectionAbout} />
               </div>
             </Modal >
           } />
@@ -64,7 +73,7 @@ function App() {
                   </DescriptionRoadMap>
                   <ProjectType />
                 </div>
-                <FooterTxt />
+                <FooterTxt section={sectionRoadmap} />
               </div>
             </Modal >
           } />
@@ -75,7 +84,7 @@ function App() {
                   <CloseBtn />
                 </DescriptionBehind >
                 <Carousel />
-                <FooterTxt />
+                <FooterTxt section={sectionBehindDesign} />
               </div>
             </Modal >
           } />
@@ -90,6 +99,7 @@ function App() {
           <Route path="/faq" element={
             <Modal >
               <FAQ >
+                <CloseBtn />
                 <Question />
               </FAQ>
             </Modal >

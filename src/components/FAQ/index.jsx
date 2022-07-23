@@ -4,9 +4,10 @@ import styled from "styled-components";
 const FAQ = ({ children }) => {
     return (
         <Container className='Inner'>
+            {children[0]}
             <h1 className='title faq'>FAQ</h1>
             <div className="questions">
-                {children}
+                {children[1]}
             </div>
         </Container>
     )
