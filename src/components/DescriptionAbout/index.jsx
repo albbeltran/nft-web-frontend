@@ -1,6 +1,6 @@
 import React from 'react';
 import { Content } from './Description';
-import vector from '../../assets/Vector-Right.svg'
+import vector from '../../assets/Vector-Right.svg';
 
 const DescriptionAbout = ({ children }) => {
     return (

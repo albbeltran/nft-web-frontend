@@ -17,6 +17,8 @@ import { DescriptionBehind } from '../../components/DescripionBehind';
 import { Carousel } from '../../components/Carousel';
 import { DescriptionJoinUs } from '../../components/DescriptionJoinUs';
 import { Button } from '../../components/Button';
+import { FAQ } from '../../components/FAQ/index.jsx';
+import { Question } from '../../components/Question/index.jsx';
 
 function App() {
 
@@ -80,6 +82,13 @@ function App() {
                 <CloseBtn />
                 <Button text='Join our Discord' classBtn='join' />
               </DescriptionJoinUs >
+            </Modal >
+          } />
+          <Route path="/faq" element={
+            <Modal >
+              <FAQ >
+                <Question />
+              </FAQ>
             </Modal >
           } />
         </Routes>
