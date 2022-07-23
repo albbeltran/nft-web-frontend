@@ -21,6 +21,7 @@ import { FAQ } from '../../components/FAQ/index.jsx';
 import { Question } from '../../components/Question/index.jsx';
 import { TeamSection } from '../../components/TeamSection';
 import { Card } from '../../components/Card';
+import { Alert } from '../../components/Alert/index.jsx';
 
 function App() {
 
@@ -96,6 +97,7 @@ function App() {
           <Route path="/team" element={
             <Modal >
               <TeamSection >
+                <Alert text='This page is under construction, you are seeing a preview.' />
                 <CloseBtn />
                 <Card />
               </TeamSection >
