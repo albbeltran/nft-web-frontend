@@ -1,21 +1,4 @@
-import React from 'react'
-import desartsProject from '../../assets/desarts-project-roadmap.png';
-import regularProject from '../../assets/regular-project-roadmap.png';
 import styled from "styled-components";
-
-const ArtRoadMap = () => {
-    let btnActive;
-
-    return (
-        <Container>
-            <img src={regularProject} className='img' alt='regular-project'></img>
-            <span className='btnGroup'>
-                <button className='btn regular active'>Regular project</button>
-                <button className='btn desarts'>Des Arts project</button>
-            </span>
-        </Container>
-    )
-}
 
 const Container = styled.div`
     display: flex;
@@ -25,9 +8,9 @@ const Container = styled.div`
     font-family: 'Fredoka', sans-serif; 
 
     .img {
-        width: 40%;
         margin: 0 auto;
         text-align: center;
+        max-height: 400px;
     }
 
     .btnGroup {
@@ -55,13 +38,8 @@ const Container = styled.div`
         .active {
             background-color: #fff;
             color: #000;
-
-            &:hover {
-                background-color: transparent;
-                color: #fff;
-            }
         }
     }
 `
 
-export { ArtRoadMap };
+export { Container };

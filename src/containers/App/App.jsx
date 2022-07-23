@@ -11,7 +11,7 @@ import { Navegation } from '../Navegation/index.jsx';
 import { DescriptionAbout } from '../../components/DescriptionAbout';
 import { CloseBtn } from '../../components/CloseBtn/index.jsx';
 import { DescriptionRoadMap } from '../../components/DescriptionRoadMap';
-import { ArtRoadMap } from '../../components/ProjectType/index.jsx';
+import { ProjectType } from '../ProjectType/index.jsx';
 
 function App() {
 
@@ -48,7 +48,7 @@ function App() {
                 <DescriptionRoadMap >
                   <CloseBtn />
                 </DescriptionRoadMap>
-                <ArtRoadMap />
+                <ProjectType />
               </div>
             </Modal >
           } />
