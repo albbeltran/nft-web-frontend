@@ -1,9 +1,10 @@
 import React from 'react';
 import { HeaderContent } from './Header';
 
+
 const lineHeight = { 'lineHeight': '25px' }
 
-const Header = () => {
+const Header = ({ children }) => {
     return (
         <HeaderContent>
             <span>LAUNCHING SOON</span>
@@ -11,6 +12,7 @@ const Header = () => {
             <span className='subtitle'>METAPOLITAN SOCIETY</span>
             <span style={lineHeight}>Building web 3.0 for the future,</span>
             <span>one unicorn at a time...</span>
+            {children}
         </HeaderContent>
     )
 }

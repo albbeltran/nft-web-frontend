@@ -1,0 +1,15 @@
+.button {
+    margin-top: 5em;
+    margin-left:10em;
+    font-weight: 450;
+    display: inline-block;
+    font-family: 'Fredoka', sans-serif; 
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button:hover {
+    text-decoration: underline;
+    color: #fff;
+}

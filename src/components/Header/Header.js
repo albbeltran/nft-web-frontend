@@ -24,6 +24,21 @@ const HeaderContent = styled.div`
         font-weight: 650;
         font-size: 40px;
     }
+
+    .button {
+        margin-top: 5em;
+        margin-left:10em;
+        font-weight: 450;
+        display: inline-block;
+        font-family: 'Fredoka', sans-serif; 
+        font-size: 20px;
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 `;
 
 export { HeaderContent };

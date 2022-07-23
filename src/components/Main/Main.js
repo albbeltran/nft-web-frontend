@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const MainContent = styled.main`
-    height: 696px;
+    height: 692px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;

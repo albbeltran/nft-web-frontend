@@ -24,6 +24,7 @@ import { Question } from '../../components/Question/index.jsx';
 import { TeamSection } from '../../components/TeamSection';
 import { Card } from '../../components/Card';
 import { Alert } from '../../components/Alert/index.jsx';
+import { MenuBtn } from '../../components/MenuBtn/index.jsx';
 
 function App() {
   const {
@@ -44,7 +45,9 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Header />
+              <Header>
+                <MenuBtn />
+              </Header>
               <Picture />
             </>
           } />

@@ -22,9 +22,9 @@ const Link = styled.a`
         color: #000;
     }
 
-        position: fixed;
-        top:600px;
-        left: 350px;
+    position: fixed;
+    top:600px;
+    left: 350px;
 `
 
 export { Button };
