@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from "styled-components";
+import React from 'react';
+import { Figure } from './Picture';
 import figure from '../../assets/figure-main.png';
 
 const Picture = () => {
@@ -7,10 +7,5 @@ const Picture = () => {
         <Figure src={figure} alt="logo" />
     )
 }
-
-const Figure = styled.img`
-    margin-top: 4em;
-    width: 90%;  
-`;
 
 export { Picture };

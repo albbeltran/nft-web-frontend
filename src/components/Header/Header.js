@@ -1,22 +1,6 @@
-import React from 'react';
 import styled from "styled-components";
 
-const lineHeight = { 'lineHeight': '25px' }
-
-const Header = () => {
-    return (
-        <Div>
-            <span>LAUNCHING SOON</span>
-            <h1 className='title'>DES ARTS</h1>
-            <span className='subtitle'>METAPOLITAN SOCIETY</span>
-            <span style={lineHeight}>Building web 3.0 for the future,</span>
-            <span>one unicorn at a time...</span>
-        </Div>
-    )
-}
-
-const Div = styled.div`
-
+const HeaderContent = styled.div`
     padding: 9em 0em 5em 14em;
     color: white;
     font-family: 'Fredoka', sans-serif;
@@ -40,7 +24,6 @@ const Div = styled.div`
         font-weight: 650;
         font-size: 40px;
     }
-
 `;
 
-export { Header };
+export { HeaderContent };

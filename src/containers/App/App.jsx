@@ -1,17 +1,17 @@
 import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { Modal } from '../../Modal/Modal.js';
-import { Menu } from '../../components/Menu/Menu.jsx';
-import { Logo } from '../../components/Logo/Logo.jsx';
-import { Icons } from '../../components/Icons/Icons.jsx';
-import { Main } from '../../components/Main/Main.jsx';
-import { Header } from '../../components/Header/Header.jsx';
-import { Picture } from '../../components/Picture/Picture.jsx';
-import { Navegation } from '../Navegation/Navegation.jsx';
-import { Description } from '../../components/Description/Description';
-import { CloseButton } from '../../components/CloseButton/CloseButton.jsx';
-import { DescriptionRM } from '../../components/DescriptionRM/DescriptionRM';
-import { ArtRoadMap } from '../../components/ArtRoadMap/ArtRoadMap';
+import { Menu } from '../../components/Menu/index.jsx';
+import { Logo } from '../../components/Logo/index.jsx';
+import { Icons } from '../../components/Icons/index.jsx';
+import { Main } from '../../components/Main/index.jsx';
+import { Header } from '../../components/Header/index.jsx';
+import { Picture } from '../../components/Picture/index.jsx';
+import { Navegation } from '../Navegation/index.jsx';
+import { DescriptionAbout } from '../../components/DescriptionAbout';
+import { CloseBtn } from '../../components/CloseBtn/index.jsx';
+import { DescriptionRoadMap } from '../../components/DescriptionRoadMap';
+import { ArtRoadMap } from '../../components/ArtRoadMap/index.jsx';
 
 function App() {
 
@@ -38,18 +38,18 @@ function App() {
           <Route path="/about" element={
             <>
               <Modal >
-                <Description >
-                  <CloseButton />
-                </Description >
+                <DescriptionAbout >
+                  <CloseBtn />
+                </DescriptionAbout >
               </Modal >
             </>
           } />
           <Route path="/roadmap" element={
             <>
               <Modal >
-                <DescriptionRM >
-                  <CloseButton />
-                </DescriptionRM>
+                <DescriptionRoadMap >
+                  <CloseBtn />
+                </DescriptionRoadMap>
                 <ArtRoadMap />
               </Modal >
             </>
