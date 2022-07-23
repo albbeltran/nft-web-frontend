@@ -2,9 +2,10 @@ import React from 'react';
 import styled from "styled-components";
 import vector from '../../assets/Vector-Right.svg'
 
-const Description = () => {
+const Description = ({ children }) => {
     return (
         <Div>
+            {children}
             <h1 className='title'>About Us</h1>
             <div className='container'>
                 <p className='description'><strong>Des Arts is a NFT collection of 8,888 NFTs built on the Ethereum Blockchain.</strong>

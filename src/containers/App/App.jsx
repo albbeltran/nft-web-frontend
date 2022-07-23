@@ -6,11 +6,13 @@ import { Logo } from '../../components/Logo/Logo.jsx';
 import { Icons } from '../../components/Icons/Icons.jsx';
 import { Main } from '../../components/Main/Main.jsx';
 import { Header } from '../../components/Header/Header.jsx';
-import { Description } from '../../components/Description/Description';
 import { Picture } from '../../components/Picture/Picture.jsx';
 import { Navegation } from '../Navegation/Navegation.jsx';
+import { Description } from '../../components/Description/Description';
+import { CloseButton } from '../../components/CloseButton/CloseButton.jsx';
 
 function App() {
+
   return (
     <div>
       <Menu >
@@ -34,7 +36,9 @@ function App() {
           <Route path="/about" element={
             <>
               <About>
-                <Description />
+                <Description>
+                  <CloseButton />
+                </Description>
               </About>
             </>
           } />

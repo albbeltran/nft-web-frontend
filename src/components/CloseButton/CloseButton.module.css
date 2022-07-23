@@ -1,0 +1,13 @@
+.icon {
+    position: fixed;
+    color: rgba(79, 79, 79, 0.8);
+    z-index: 10;
+    cursor: pointer;
+    top: 110px;
+    right: 100px;
+    font-size: 26px;
+}
+
+.icon:hover {
+    color: rgba(200, 200, 200, 0.8);
+}
