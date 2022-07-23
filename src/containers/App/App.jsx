@@ -19,6 +19,8 @@ import { DescriptionJoinUs } from '../../components/DescriptionJoinUs';
 import { Button } from '../../components/Button';
 import { FAQ } from '../../components/FAQ/index.jsx';
 import { Question } from '../../components/Question/index.jsx';
+import { TeamSection } from '../../components/TeamSection';
+import { Card } from '../../components/Card';
 
 function App() {
 
@@ -89,6 +91,14 @@ function App() {
               <FAQ >
                 <Question />
               </FAQ>
+            </Modal >
+          } />
+          <Route path="/team" element={
+            <Modal >
+              <TeamSection >
+                <CloseBtn />
+                <Card />
+              </TeamSection >
             </Modal >
           } />
         </Routes>
