@@ -1,7 +1,4 @@
-import styled from "styled-components";
-
-let Modal = styled.div`
-
+.ModalBackground {
     background: rgba(0, 0, 0, .5);
     position: fixed;
     top: -10px;
@@ -13,7 +10,4 @@ let Modal = styled.div`
     align-items: center;
     color: white;
     z-index: 0;
-
-`;
-
-export { Modal };
+}

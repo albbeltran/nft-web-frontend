@@ -1,7 +1,6 @@
 import './App.css';
-import { NavLink, Route, Routes } from "react-router-dom";
-import { About } from '../../Modals/About.js';
-import { Roadmap } from '../../Modals/Roadmap.js';
+import { Route, Routes } from "react-router-dom";
+import { Modal } from '../../Modal/Modal.js';
 import { Menu } from '../../components/Menu/Menu.jsx';
 import { Logo } from '../../components/Logo/Logo.jsx';
 import { Icons } from '../../components/Icons/Icons.jsx';
@@ -38,21 +37,21 @@ function App() {
           } />
           <Route path="/about" element={
             <>
-              <About>
-                <Description>
+              <Modal >
+                <Description >
                   <CloseButton />
-                </Description>
-              </About>
+                </Description >
+              </Modal >
             </>
           } />
           <Route path="/roadmap" element={
             <>
-              <Roadmap>
-                <DescriptionRM>
+              <Modal >
+                <DescriptionRM >
                   <CloseButton />
                 </DescriptionRM>
                 <ArtRoadMap />
-              </Roadmap>
+              </Modal >
             </>
           } />
         </Routes>
