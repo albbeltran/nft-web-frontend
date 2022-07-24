@@ -154,38 +154,47 @@
         ],
         "FAQ": [
             {
+                "id": "q1",
                 "question": "How can I join the Metapolitan Club?",
-                "answer": "You will be able to mint a Des Arts NFT on our website. Join our Discord to be the first to find out."
+                "answer": "You will be able to mint a Des Arts NFT on our website. <strong>Join our Discord</strong> to be the first to find out."
             },
             {
+                "id": "q2",
                 "question": "When will I be able to mint my NFT?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             },
             {
+                "id": "q3",
                 "question": "How many Des Arts NFTs will be available?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             },
             {
+                "id": "q4",
                 "question": "What Blockchain will you be using?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             },
             {
+                "id": "q5",
                 "question": "What are your secondary royalty fees?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             },
             {
+                "id": "q6",
                 "question": "Who is backing Des Arts Ventures?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             },
             {
+                "id": "q7",
                 "question": "How do I pitch my idea?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             },
             {
+                "id": "q8",
                 "question": "How do I get Whitelisted?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             },
             {
+                "id": "q9",
                 "question": "When will Project Pegasus be revealed?",
                 "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             }

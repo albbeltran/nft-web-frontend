@@ -112,10 +112,8 @@ function App() {
           } />
           <Route path="/faq" element={
             <Modal >
-              <FAQSection >
-                <Alert text='This page is under construction, you are seeing a preview.' />
+              <FAQSection questions={FAQ}>
                 <CloseBtn />
-                <Question />
               </FAQSection>
             </Modal >
           } />
