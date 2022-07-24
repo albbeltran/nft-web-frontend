@@ -15,9 +15,8 @@ const Content = styled.div`
     }
 
     .container {
-        margin: 0 auto;
-        margin-top: 4.75em;
-        margin-bottom: 4.25em;
+        padding: 0;
+        margin: 4.75em auto 4.25em auto;
     }
 
     .description {
@@ -44,12 +43,6 @@ const Content = styled.div`
         &:hover {
             text-decoration: underline;
         }
-    }
-
-    .footerTxt {
-        font-family: 'Fredoka', sans-serif; 
-        font-size: 10px;
-        font-weight: 300;
     }
 `;
 

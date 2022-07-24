@@ -5,7 +5,7 @@ const useData = () => {
     const [data, setData] = useState({});
 
     useEffect(() => {
-        getData('https://mocki.io/v1/3b98a69c-e6ea-418e-8933-e6490798ebb6')
+        getData('https://mocki.io/v1/977e41dd-f0e3-4472-92b9-911ac714df68')
             .then(data => setData(data.data))
             .catch(error => console.log(error));
     }, [])

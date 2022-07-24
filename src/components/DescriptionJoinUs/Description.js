@@ -17,9 +17,7 @@ const Content = styled.div`
     }
 
     .container {
-        margin: 0 auto;
-        margin-top: 1.25em;
-        margin-bottom: 4.25em;
+        margin: 1.25em auto 4.25em auto;
         padding: 0;
     }
 

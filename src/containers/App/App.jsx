@@ -89,9 +89,9 @@ function App() {
           <Route path="/behind-design" element={
             <Modal >
               <div className='Roadmap--container'>
-                <DescriptionBehind >
+                <Description content={descBehindDesign} link={false} >
                   <CloseBtn />
-                </DescriptionBehind >
+                </Description >
                 <Carousel />
                 <FooterTxt section={sectionBehindDesign} />
               </div>
