@@ -10,6 +10,7 @@ import { Main } from '../../components/Main/index.jsx';
 import { Header } from '../../components/Header/index.jsx';
 import { Picture } from '../../components/Picture/index.jsx';
 import { Navegation } from '../Navegation/index.jsx';
+import { Description } from '../../components/DescriptionTemplate';
 import { DescriptionAbout } from '../../components/DescriptionAbout';
 import { CloseBtn } from '../../components/CloseBtn/index.jsx';
 import { DescriptionRoadMap } from '../../components/DescriptionRoadMap';
@@ -19,7 +20,7 @@ import { DescriptionBehind } from '../../components/DescripionBehind';
 import { Carousel } from '../../components/Carousel';
 import { DescriptionJoinUs } from '../../components/DescriptionJoinUs';
 import { Button } from '../../components/Button';
-import { FAQ } from '../../components/FAQ/index.jsx';
+import { FAQSection } from '../../components/FAQSection/index.jsx';
 import { Question } from '../../components/Question/index.jsx';
 import { TeamSection } from '../../components/TeamSection';
 import { Card } from '../../components/Card';
@@ -65,9 +66,9 @@ function App() {
           <Route path="/about" element={
             <Modal >
               <div className='Roadmap--container'>
-                <DescriptionAbout >
+                <Description content={descAbout} link={true} >
                   <CloseBtn />
-                </DescriptionAbout >
+                </Description >
                 <FooterTxt section={sectionAbout} />
               </div>
             </Modal >
@@ -106,11 +107,11 @@ function App() {
           } />
           <Route path="/faq" element={
             <Modal >
-              <FAQ >
+              <FAQSection >
                 <Alert text='This page is under construction, you are seeing a preview.' />
                 <CloseBtn />
                 <Question />
-              </FAQ>
+              </FAQSection>
             </Modal >
           } />
           <Route path="/team" element={

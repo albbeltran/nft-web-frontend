@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 
-const FAQ = ({ children }) => {
+const FAQSection = ({ children }) => {
     return (
         <Container className='Inner'>
             {children[1]}
@@ -35,4 +35,4 @@ const Container = styled.div`
     }
 `
 
-export { FAQ };
+export { FAQSection };
