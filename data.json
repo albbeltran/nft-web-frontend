@@ -2,7 +2,6 @@
     "data": {
         "sectionAbout": "About",
         "sectionBehindDesign": "Behind Design",
-        "sectionJoinUs": "Join Us",
         "sectionRoadmap": "Roadmap",
         "descAbout": {
             "section": "about",
@@ -26,13 +25,64 @@
         },
         "behindDesingSet": [
             {
-                "card": [
-                    {
-                        "name": "Mozart",
-                        "image": ".assets/behind-design/Mozart.png",
-                        "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
-                    }
-                ]
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
+            },
+            {
+                "name": "Mozart",
+                "image": ".assets/behind-design/Mozart.png",
+                "description": "Hailed as one of the most well-known composers of all time, Wolfgang Amadeus Mozart became the face of classical music. His unwavering belief in his creative ability enabled him to become an incredibly prolific composer by the age of 35. Des Arts aims to enable individuals to channel the youthful exuberance and artistry that Mozart himself possessed, confidently creating and innovating for the future."
             }
         ],
         "team": [
@@ -43,12 +93,100 @@
                 "twitter": "#",
                 "linkedin": "#",
                 "instagram": "#"
+            },
+            {
+                "name": "Seika L.",
+                "jobTitle": "COO",
+                "image": ".assets/team/COO.png",
+                "twitter": "#",
+                "linkedin": "#",
+                "instagram": "#"
+            },
+            {
+                "name": "Zayed Z.",
+                "jobTitle": "CTO",
+                "image": ".assets/team/CTO.png",
+                "twitter": "#",
+                "linkedin": "#",
+                "instagram": "#"
+            },
+            {
+                "name": "Markus Oasis",
+                "jobTitle": "CMO",
+                "image": ".assets/team/CMO.png",
+                "twitter": "#",
+                "linkedin": "#",
+                "instagram": "#"
+            },
+            {
+                "name": "Yuichiro N.",
+                "jobTitle": "Metalia CEO",
+                "image": ".assets/team/MetaliaCEO.png",
+                "twitter": "#",
+                "linkedin": "#",
+                "instagram": "#"
+            },
+            {
+                "name": "Kengo N.",
+                "jobTitle": "Investor",
+                "image": ".assets/team/Investor.png",
+                "twitter": "#",
+                "linkedin": "#",
+                "instagram": "#"
+            },
+            {
+                "name": "To Be Revealed",
+                "jobTitle": "CEO",
+                "image": ".assets/team/CEO.png",
+                "twitter": "#",
+                "linkedin": "#",
+                "instagram": "#"
+            },
+            {
+                "name": "To Be Revealed",
+                "jobTitle": "CEO",
+                "image": ".assets/team/CEO.png",
+                "twitter": "#",
+                "linkedin": "#",
+                "instagram": "#"
             }
         ],
         "FAQ": [
             {
-                "title": "Question title",
-                "text": "Question text"
+                "question": "How can I join the Metapolitan Club?",
+                "answer": "You will be able to mint a Des Arts NFT on our website. Join our Discord to be the first to find out."
+            },
+            {
+                "question": "When will I be able to mint my NFT?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
+            },
+            {
+                "question": "How many Des Arts NFTs will be available?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
+            },
+            {
+                "question": "What Blockchain will you be using?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
+            },
+            {
+                "question": "What are your secondary royalty fees?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
+            },
+            {
+                "question": "Who is backing Des Arts Ventures?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
+            },
+            {
+                "question": "How do I pitch my idea?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
+            },
+            {
+                "question": "How do I get Whitelisted?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
+            },
+            {
+                "question": "When will Project Pegasus be revealed?",
+                "answer": "magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut."
             }
         ]
     }

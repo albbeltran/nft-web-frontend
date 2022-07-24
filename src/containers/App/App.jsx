@@ -33,8 +33,6 @@ function App() {
     sectionRoadmap
   } = useData();
 
-  console.log(sectionAbout)
-
   return (
     <div>
       <Menu >
