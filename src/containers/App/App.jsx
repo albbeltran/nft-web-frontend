@@ -30,7 +30,14 @@ function App() {
   const {
     sectionAbout,
     sectionBehindDesign,
-    sectionRoadmap
+    sectionRoadmap,
+    descAbout,
+    descBehindDesign,
+    descJoinUs,
+    descRoadMap,
+    behindDesingSet,
+    team,
+    FAQ
   } = useData();
 
   return (

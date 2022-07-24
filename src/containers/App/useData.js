@@ -5,19 +5,35 @@ const useData = () => {
     const [data, setData] = useState({});
 
     useEffect(() => {
-        getData('https://mocki.io/v1/30305c46-10ac-4541-bba2-d71613648edd')
+        getData('https://mocki.io/v1/3b98a69c-e6ea-418e-8933-e6490798ebb6')
             .then(data => setData(data.data))
             .catch(error => console.log(error));
     }, [])
 
-    const sectionAbout = data.sectionAbout;
-    const sectionBehindDesign = data.sectionBehindDesign;
-    const sectionRoadmap = data.sectionRoadmap;
+    const {
+        sectionAbout,
+        sectionBehindDesign,
+        sectionRoadmap,
+        descAbout,
+        descBehindDesign,
+        descJoinUs,
+        descRoadMap,
+        behindDesingSet,
+        team,
+        FAQ
+    } = data;
 
     return {
         sectionAbout,
         sectionBehindDesign,
-        sectionRoadmap
+        sectionRoadmap,
+        descAbout,
+        descBehindDesign,
+        descJoinUs,
+        descRoadMap,
+        behindDesingSet,
+        team,
+        FAQ
     };
 }
 
