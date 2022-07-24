@@ -17,8 +17,12 @@ const images = {
     p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12
 }
 
-const Carousel = ({ artists, setOpenModal }) => {
-    console.log(artists)
+const Carousel = ({ artists, setOpenModal, setData }) => {
+
+    const sendData = (artist) => {
+        setData(artist);
+        setOpenModal(true);
+    }
 
     return (
         <Container id="carouselDesign" className="carousel slide" data-bs-ride="carousel">
@@ -32,7 +36,7 @@ const Carousel = ({ artists, setOpenModal }) => {
                                         if (index < 6) {
                                             return (
                                                 <div className="col" key={index}>
-                                                    <a onClick={() => setOpenModal(true)}>
+                                                    <a onClick={() => sendData(artist)}>
                                                         <img src={images[artist.id]} className="d-block w-100" alt={artist.name}></img>
                                                     </a>
                                                 </div>

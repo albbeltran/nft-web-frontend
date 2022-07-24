@@ -37,7 +37,9 @@ function App() {
     team,
     FAQ,
     openModal,
-    setOpenModal
+    setOpenModal,
+    artistData,
+    setArtistData
   } = useData();
 
   return (
@@ -91,7 +93,11 @@ function App() {
                 <Description content={descBehindDesign} link={false} >
                   <CloseBtn />
                 </Description >
-                <Carousel artists={behindDesingSet} setOpenModal={setOpenModal} />
+                <Carousel
+                  artists={behindDesingSet}
+                  setOpenModal={setOpenModal}
+                  setData={setArtistData}
+                />
                 <FooterTxt section={sectionBehindDesign} />
               </div>
             </Modal >
@@ -129,6 +135,7 @@ function App() {
         <ModalArtist>
           <Artist
             setOpenModal={setOpenModal}
+            artistData={artistData}
           >
             <CloseBtn section="artist" setOpenModal={setOpenModal} />
           </Artist>
