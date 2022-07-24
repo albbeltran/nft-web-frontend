@@ -7,7 +7,7 @@ const useData = () => {
     const [artistData, setArtistData] = useState({});
 
     useEffect(() => {
-        getData('https://mocki.io/v1/516846e6-a891-4030-8790-da21ea1372a2')
+        getData('https://mocki.io/v1/f4103649-7e34-4587-972a-f940098725bd')
             .then(data => setData(data.data))
             .catch(error => console.log(error));
     }, [])

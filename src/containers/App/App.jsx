@@ -119,10 +119,8 @@ function App() {
           } />
           <Route path="/team" element={
             <Modal >
-              <TeamSection >
-                <Alert text='This page is under construction, you are seeing a preview.' />
+              <TeamSection cards={team} >
                 <CloseBtn />
-                <Card />
               </TeamSection >
             </Modal >
           } />
