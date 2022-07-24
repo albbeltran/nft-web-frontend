@@ -77,9 +77,9 @@ function App() {
             <Modal >
               <div className='Roadmap--container'>
                 <div className='Roadmap--content'>
-                  <DescriptionRoadMap >
+                  <Description content={descRoadMap} link={false} >
                     <CloseBtn />
-                  </DescriptionRoadMap>
+                  </Description>
                   <ProjectType />
                 </div>
                 <FooterTxt section={sectionRoadmap} />

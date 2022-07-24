@@ -12,7 +12,7 @@ const Description = ({ children, content = {}, link }) => {
         stylesContainer = {'width': '90%'}
         break;
       case 'roadmap':
-        stylesMain = {'width': '75%'}
+        stylesMain = {'width': '75%', 'margin-left': '10em' }
         break;
       case 'BehindDesing':
         stylesMain = {'width': '80%'}
