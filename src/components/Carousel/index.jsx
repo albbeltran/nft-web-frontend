@@ -58,7 +58,7 @@ const Carousel = ({ artists, setOpenModal, setData }) => {
                                         if (index >= 6) {
                                             return (
                                                 <div className="col" key={index}>
-                                                    <a onClick={() => setOpenModal(true)}>
+                                                    <a onClick={() => sendData(artist)}>
                                                         <img src={images[artist.id]} className="d-block w-100" alt={artist.name}></img>
                                                     </a>
                                                 </div>
