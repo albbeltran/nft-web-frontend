@@ -99,10 +99,10 @@ function App() {
           } />
           <Route path="/join" element={
             <Modal >
-              <DescriptionJoinUs >
+              <Description content={descJoinUs} link={false} >
                 <CloseBtn />
                 <Button text='Join our Discord' classBtn='join' />
-              </DescriptionJoinUs >
+              </Description >
             </Modal >
           } />
           <Route path="/faq" element={

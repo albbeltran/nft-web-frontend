@@ -14,10 +14,10 @@ const Description = ({ children, content = {}, link }) => {
       case 'roadmap':
         stylesMain = {'width': '75%', 'margin-left': '10em' }
         break;
-      case 'BehindDesing':
+      case 'behind-design':
         stylesMain = {'width': '80%'}
         break;
-      case 'JoinUs':
+      case 'join':
         stylesMain = { 'width': '30%', 'margin': '0 auto 0 10em'}
         stylesContainer = { 'margin': '1.25em auto 4.25em auto' }
         break;
