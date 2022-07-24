@@ -13,6 +13,10 @@ const Container = styled.div`
                 .col {
                     padding: 0;
                     width: 180px;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }

@@ -3,6 +3,7 @@ import { getData } from '../../utils/getData';
 
 const useData = () => {
     const [data, setData] = useState({});
+    const [openModal, setOpenModal] = useState(false);
 
     useEffect(() => {
         getData('https://mocki.io/v1/977e41dd-f0e3-4472-92b9-911ac714df68')
@@ -33,7 +34,9 @@ const useData = () => {
         descRoadMap,
         behindDesingSet,
         team,
-        FAQ
+        FAQ,
+        openModal,
+        setOpenModal
     };
 }
 

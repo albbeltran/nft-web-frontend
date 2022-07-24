@@ -15,14 +15,18 @@ import Marie from '../../assets/behind-design/Marie.png';
 import MOM from '../../assets/behind-design/MOM.png';
 import Mozart from '../../assets/behind-design/Mozart.png';
 
-const Carousel = () => {
+const Carousel = ({ setOpenModal }) => {
+
+
     return (
         <Container id="carouselDesign" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <div className='row'>
                         <div className="col">
-                            <img src={DaikiMiyana1} className="d-block w-100" alt="..."></img>
+                            <a onClick={() => setOpenModal(true)}>
+                                <img src={DaikiMiyana1} className="d-block w-100" alt="..."></img>
+                            </a>
                         </div>
                         <div className="col">
                             <img src={DaikiMiyana2} className="d-block w-100" alt="..."></img>
@@ -38,7 +42,7 @@ const Carousel = () => {
                         </div>
                         <div className="col">
                             <img src={Chaplin} className="d-block w-100" alt="..."></img>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div className="carousel-item">
@@ -50,7 +54,7 @@ const Carousel = () => {
                             <img src={Dali} className="d-block w-100" alt="..."></img>
                         </div>
                         <div className="col">
-                        <img src={KK} className="d-block w-100" alt="..."></img>
+                            <img src={KK} className="d-block w-100" alt="..."></img>
                         </div>
                         <div className="col">
                             <img src={Lagerfield} className="d-block w-100" alt="..."></img>
@@ -60,7 +64,7 @@ const Carousel = () => {
                         </div>
                         <div className="col">
                             <img src={Mandera_} className="d-block w-100" alt="..."></img>
-                        </div> 
+                        </div>
                     </div>
                 </div>
             </div>
