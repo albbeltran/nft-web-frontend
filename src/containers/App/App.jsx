@@ -2,7 +2,7 @@ import './App.css';
 import { Route, Routes } from "react-router-dom";
 import { useData } from './useData';
 import { Modal } from '../../Modal/Section/Modal';
-import { ModalArtist } from '../../Modal/Artist/ModalArtist'; 
+import { ModalArtist } from '../../Modal/Artist/ModalArtist';
 import { Menu } from '../../components/Menu/index.jsx';
 import { Logo } from '../../components/Logo/index.jsx';
 import { Icons } from '../../components/Icons/index.jsx';
@@ -127,9 +127,11 @@ function App() {
 
       {!!openModal && (
         <ModalArtist>
-          <Artist 
+          <Artist
             setOpenModal={setOpenModal}
-          />
+          >
+            <CloseBtn section="artist" setOpenModal={setOpenModal} />
+          </Artist>
         </ModalArtist>
       )}
     </div >
