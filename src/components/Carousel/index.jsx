@@ -1,70 +1,70 @@
 import React from 'react';
 import { Container } from './Carousel';
-import Angelou from '../../assets/behind-design/Angelou.png';
-import Armstrong from '../../assets/behind-design/Armstrong.png';
-import Chaplin from '../../assets/behind-design/Chaplin.png';
-import DaikiMiyana1 from '../../assets/behind-design/Daiki-Miyama1.png';
-import DaikiMiyana2 from '../../assets/behind-design/Daiki-Miyama2.png';
-import Dali from '../../assets/behind-design/Dali.png';
-import Jeanne from '../../assets/behind-design/Jeanne.png';
-import KK from '../../assets/behind-design/KK.png';
-import Lagerfield from '../../assets/behind-design/Lagerfield.png';
-import Lee from '../../assets/behind-design/Lee.png';
-import Mandera_ from '../../assets/behind-design/Mandera_.png';
-import Marie from '../../assets/behind-design/Marie.png';
-import MOM from '../../assets/behind-design/MOM.png';
-import Mozart from '../../assets/behind-design/Mozart.png';
+import p1 from '../../assets/behind-design/Einstein.png';
+import p2 from '../../assets/behind-design/DaVinci.png'
+import p3 from '../../assets/behind-design/Mozart.png';
+import p4 from '../../assets/behind-design/Jeanne.png';
+import p5 from '../../assets/behind-design/Armstrong.png';
+import p6 from '../../assets/behind-design/Chaplin.png';
+import p7 from '../../assets/behind-design/Lee.png';
+import p8 from '../../assets/behind-design/Mandela.png';
+import p9 from '../../assets/behind-design/Angelou.png';
+import p10 from '../../assets/behind-design/Lagerfield.png';
+import p11 from '../../assets/behind-design/Miyazaki.png';
+import p12 from '../../assets/behind-design/Mohammad.png';
 
-const Carousel = ({ setOpenModal }) => {
+const images = {
+    p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12
+}
 
+const Carousel = ({ artists, setOpenModal }) => {
+    console.log(artists)
 
     return (
         <Container id="carouselDesign" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active">
                     <div className='row'>
-                        <div className="col">
-                            <a onClick={() => setOpenModal(true)}>
-                                <img src={DaikiMiyana1} className="d-block w-100" alt="..."></img>
-                            </a>
-                        </div>
-                        <div className="col">
-                            <img src={DaikiMiyana2} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Mozart} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Jeanne} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Armstrong} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Chaplin} className="d-block w-100" alt="..."></img>
-                        </div>
+                        {
+                            artists ?
+                                (
+                                    artists.map((artist, index) => {
+                                        if (index < 6) {
+                                            return (
+                                                <div className="col" key={index}>
+                                                    <a onClick={() => setOpenModal(true)}>
+                                                        <img src={images[artist.id]} className="d-block w-100" alt={artist.name}></img>
+                                                    </a>
+                                                </div>
+                                            )
+                                        }
+                                    })
+                                )
+                                :
+                                <p>Loading...</p>
+                        }
                     </div>
                 </div>
                 <div className="carousel-item">
                     <div className='row'>
-                        <div className="col">
-                            <img src={Angelou} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Dali} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={KK} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Lagerfield} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Lee} className="d-block w-100" alt="..."></img>
-                        </div>
-                        <div className="col">
-                            <img src={Mandera_} className="d-block w-100" alt="..."></img>
-                        </div>
+                        {
+                            artists ?
+                                (
+                                    artists.map((artist, index) => {
+                                        if (index >= 6) {
+                                            return (
+                                                <div className="col" key={index}>
+                                                    <a onClick={() => setOpenModal(true)}>
+                                                        <img src={images[artist.id]} className="d-block w-100" alt={artist.name}></img>
+                                                    </a>
+                                                </div>
+                                            )
+                                        }
+                                    })
+                                )
+                                :
+                                <p>Loading...</p>
+                        }
                     </div>
                 </div>
             </div>

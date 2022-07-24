@@ -91,7 +91,7 @@ function App() {
                 <Description content={descBehindDesign} link={false} >
                   <CloseBtn />
                 </Description >
-                <Carousel setOpenModal={setOpenModal} />
+                <Carousel artists={behindDesingSet} setOpenModal={setOpenModal} />
                 <FooterTxt section={sectionBehindDesign} />
               </div>
             </Modal >

@@ -6,7 +6,7 @@ const useData = () => {
     const [openModal, setOpenModal] = useState(false);
 
     useEffect(() => {
-        getData('https://mocki.io/v1/977e41dd-f0e3-4472-92b9-911ac714df68')
+        getData('https://mocki.io/v1/e6091f7e-4d69-432f-8eba-6afd949c83ca')
             .then(data => setData(data.data))
             .catch(error => console.log(error));
     }, [])
