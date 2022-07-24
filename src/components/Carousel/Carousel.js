@@ -8,7 +8,13 @@ const Container = styled.div`
     margin: 0 auto;
 
     .carousel-inner {
+        max-width: 100%;
+
         .carousel-item {
+            max-width: 100%;
+            width: auto;
+            transition: transform 1s ease-in-out;
+            
             .row {
                 .col {
                     padding: 0;
@@ -20,8 +26,12 @@ const Container = styled.div`
                 }
             }
         }
-    }
 
+        .active.carousel-item-start {
+            display: none;
+        }
+    }
+    
     .carousel-control-prev {
         position: fixed;
         margin: auto;
