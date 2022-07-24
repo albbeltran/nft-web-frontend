@@ -15,6 +15,7 @@ const FAQSection = ({ children, questions }) => {
                         questions.map((question, index) => {
                             return (
                                 <Question key={index}
+                                    id={question.id}
                                     question={question.question}
                                     answer={question.answer}
                                 />

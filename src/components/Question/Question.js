@@ -4,6 +4,8 @@ const Container = styled.div`
     font-size: 22px;
 
     p {
+        margin-bottom: 0px;
+
         .link {
             font-weight: 450;
             display: inline-block;
@@ -14,7 +16,9 @@ const Container = styled.div`
         }
     }
 
-    .collapse-box {
+    .collapse {
+        font-weight: 300;
+
         .collapse-card {
             background-color: transparent;
             font-weight: 300;
