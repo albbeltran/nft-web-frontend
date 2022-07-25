@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Route, Routes } from "react-router-dom";
 import { useData } from './useData';
 import { Modal } from '../../Modal/Section/Modal';
@@ -24,6 +24,9 @@ import { TeamSection } from '../../components/TeamSection';
 import { Card } from '../../components/Card';
 import { Alert } from '../../components/Alert/index.jsx';
 import { MenuBtn } from '../../components/MenuBtn/index.jsx';
+import ImageMain from '../../assets/background-main.jpg';
+import ImageStars from '../../assets/background-stars.jpg';
+import { createGlobalStyle } from 'styled-components'
 
 function App() {
   const {
@@ -44,9 +47,28 @@ function App() {
   } = useData();
 
   const [path, setPath] = useState(window.location.pathname);
+  const [background, setBackground] = useState(ImageMain);
+
+  useEffect(() => {
+    if (path === '/') setBackground(ImageMain);
+    else if (path === '/home') setBackground(ImageStars);
+    else if (path === '/join') setBackground(ImageStars);
+    else setBackground(ImageMain);
+  }, [path])
+
+  const GlobalStyle = createGlobalStyle`
+    body {
+      background-image: url(${background});
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center top;
+      background-attachment: fixed;
+    }
+  `
 
   return (
     <div>
+      <GlobalStyle />
       <Menu >
         <Logo setPath={setPath} />
         <Icons />
