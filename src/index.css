@@ -12,6 +12,12 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
+  /* overflow: auto;
+  background-image: url('assets/background-main.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; */
 }
 
 #root {

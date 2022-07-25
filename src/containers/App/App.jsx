@@ -1,4 +1,5 @@
 import './App.css';
+import { useState } from 'react';
 import { Route, Routes } from "react-router-dom";
 import { useData } from './useData';
 import { Modal } from '../../Modal/Section/Modal';
@@ -6,7 +7,7 @@ import { ModalArtist } from '../../Modal/Artist/ModalArtist';
 import { Menu } from '../../components/Menu/index.jsx';
 import { Logo } from '../../components/Logo/index.jsx';
 import { Icons } from '../../components/Icons/index.jsx';
-import { Main } from '../../components/Main/index.jsx';
+import { Main } from '../Main/index.jsx';
 import { Header } from '../../components/Header/index.jsx';
 import { Picture } from '../../components/Picture/index.jsx';
 import { Navegation } from '../Navegation/index.jsx';
@@ -42,18 +43,20 @@ function App() {
     setArtistData
   } = useData();
 
+  const [path, setPath] = useState(window.location.pathname);
+
   return (
     <div>
       <Menu >
-        <Logo />
+        <Logo setPath={setPath} />
         <Icons />
       </Menu>
-      <Main >
+      <Main path={path} >
         <Routes>
           <Route path="/" element={
             <>
-              <Header>
-                <MenuBtn />
+              <Header >
+                <MenuBtn setPath={setPath} />
               </Header>
               <Picture />
             </>
@@ -61,14 +64,14 @@ function App() {
           <Route path="/home" element={
             <>
               <Header />
-              <Navegation />
+              <Navegation path={path} setPath={setPath} />
             </>
           } />
           <Route path="/about" element={
             <Modal >
               <div className='Modal--container'>
                 <Description content={descAbout} link={true} >
-                  <CloseBtn />
+                  <CloseBtn setPath={setPath} />
                 </Description >
                 <FooterTxt section={sectionAbout} />
               </div>
@@ -79,7 +82,7 @@ function App() {
               <div className='Modal--container'>
                 <div className='Modal--content'>
                   <Description content={descRoadMap} link={false} >
-                    <CloseBtn />
+                    <CloseBtn setPath={setPath} />
                   </Description>
                   <ProjectType />
                 </div>
@@ -91,7 +94,7 @@ function App() {
             <Modal >
               <div className='Modal--container'>
                 <Description content={descBehindDesign} link={false} >
-                  <CloseBtn />
+                  <CloseBtn setPath={setPath} />
                 </Description >
                 <Carousel
                   artists={behindDesingSet}
@@ -105,7 +108,7 @@ function App() {
           <Route path="/join" element={
             <Modal >
               <Description content={descJoinUs} link={false} >
-                <CloseBtn />
+                <CloseBtn setPath={setPath} />
                 <Button text='Join our Discord' classBtn='join' />
               </Description >
             </Modal >
@@ -113,14 +116,14 @@ function App() {
           <Route path="/faq" element={
             <Modal >
               <FAQSection questions={FAQ}>
-                <CloseBtn />
+                <CloseBtn setPath={setPath} />
               </FAQSection>
             </Modal >
           } />
           <Route path="/team" element={
             <Modal >
               <TeamSection cards={team} >
-                <CloseBtn />
+                <CloseBtn setPath={setPath} />
               </TeamSection >
             </Modal >
           } />

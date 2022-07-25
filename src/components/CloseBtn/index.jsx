@@ -3,7 +3,7 @@ import { AiOutlineCloseCircle } from 'react-icons/ai';
 import styles from './CloseBtn.module.css';
 import { useNavigate } from 'react-router-dom';
 
-const CloseBtn = ({ section, setOpenModal }) => {
+const CloseBtn = ({ section, setOpenModal, setPath }) => {
 
     const navigate = useNavigate();
     const handleOpenModal = () => {
@@ -11,6 +11,7 @@ const CloseBtn = ({ section, setOpenModal }) => {
             setOpenModal(false);
         } else {
             navigate('/home');
+            setPath('/home');
         }
     }
 
