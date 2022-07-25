@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { useData } from './useData';
 import { Modal } from '../../Modal/Section/Modal';
 import { ModalArtist } from '../../Modal/Artist/ModalArtist';
@@ -55,6 +55,9 @@ function App() {
       </Menu>
       <Main path={path} >
         <Routes>
+          <Route path="*"
+            element={<Navigate to="/" replace />}
+          />
           <Route path="/" element={
             <>
               <Header >
