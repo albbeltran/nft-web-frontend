@@ -1,5 +1,4 @@
 import './App.css';
-import { useState, useEffect } from 'react';
 import { Route, Routes } from "react-router-dom";
 import { useData } from './useData';
 import { Modal } from '../../Modal/Section/Modal';
@@ -19,14 +18,11 @@ import { Carousel } from '../../components/Carousel';
 import { Artist } from '../../components/Artist';
 import { Button } from '../../components/Button';
 import { FAQSection } from '../../components/FAQSection/index.jsx';
-import { Question } from '../../components/Question/index.jsx';
 import { TeamSection } from '../../components/TeamSection';
 import { Card } from '../../components/Card';
 import { Alert } from '../../components/Alert/index.jsx';
 import { MenuBtn } from '../../components/MenuBtn/index.jsx';
-import ImageMain from '../../assets/background-main.jpg';
-import ImageStars from '../../assets/background-stars.jpg';
-import { createGlobalStyle } from 'styled-components'
+import { useBackground } from './useBackground';
 
 function App() {
   const {
@@ -46,25 +42,9 @@ function App() {
     setArtistData
   } = useData();
 
-  const [path, setPath] = useState(window.location.pathname);
-  const [background, setBackground] = useState(ImageMain);
-
-  useEffect(() => {
-    if (path === '/') setBackground(ImageMain);
-    else if (path === '/home') setBackground(ImageStars);
-    else if (path === '/join') setBackground(ImageStars);
-    else setBackground(ImageMain);
-  }, [path])
-
-  const GlobalStyle = createGlobalStyle`
-    body {
-      background-image: url(${background});
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center top;
-      background-attachment: fixed;
-    }
-  `
+  const {
+    path, setPath, GlobalStyle
+  } = useBackground();
 
   return (
     <div>
